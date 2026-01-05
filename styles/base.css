@@ -125,3 +125,7 @@ main {
     text-decoration: underline;
     background-color: var(--third-color);
 }
+.card a {
+    text-decoration: none;
+    color: var(--second-color);
+}
