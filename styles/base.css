@@ -111,8 +111,11 @@ footer {
 .flag {
     margin: 10px;
     width: 100px;
+    max-width: 100%;
     height: auto;
+    aspect-ratio: 125 / 83;
     display: block;
+    object-fit: contain;
 }
 
 
