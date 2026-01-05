@@ -1,12 +1,9 @@
 :root {
-    --first-color: #F1F2EB;
-    --second-color: #A4C2A5;
-    --third-color: #566246;
-    --fourth-color: #4A4A48;
-    --first-font-family: 'Roboto', sans-serif, system-ui;
-    --second-font-family: 'Orbitron', sans-serif, system-ui;
-    --third-font-family: 'Fascinate Inline', cursive, system-ui;
-    --fourth-font-family: 'Rubik Microbe', cursive, system-ui;
+  --first-color:  #FFFFFF;  /* texte très clair */
+  --second-color: #74C69D;  /* accent */
+  --third-color:  #2E3A2D;  /* header bg */
+  --fourth-color: #3A3A38;  /* nav/card bg */
+
 }
 
 body {
@@ -26,7 +23,7 @@ header {
 }
 
 header span {
-    font-family: var(--second-font-family);
+    font-family: 'Orbitron', sans-serif, system-ui;;
     color: var(--first-color);
     display: block;
     text-align: center;
@@ -43,7 +40,7 @@ header nav ul {
 
 header nav ul li {
     list-style-type: none;
-    font-family: var(--first-font-family);
+    font-family: 'Roboto', sans-serif, system-ui;
 
     margin: 0 15px;
 }
@@ -61,7 +58,7 @@ nav a:hover {
 
 footer {
     background-color: var(--third-color);
-    font-family: var(--second-font-family);
+    font-family: 'Orbitron', sans-serif, system-ui;;
     color: var(--first-color);
     display: block;
     text-align: center;
@@ -80,7 +77,7 @@ footer {
     margin: 15px;
     background-color: var(--fourth-color);
     color: var(--first-color);
-    font-family: var(--first-font-family);
+    font-family: 'Roboto', sans-serif, system-ui;
 }
 
 .card h2 {
