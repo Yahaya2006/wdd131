@@ -1,8 +1,8 @@
 :root {
-  --first-color:  #FFFFFF;  
-  --second-color: #74C69D;  
-  --third-color:  #2E3A2D; 
-  --fourth-color: #3A3A38;  
+    --first-color: #FFFFFF;
+    --second-color: #74C69D;
+    --third-color: #2E3A2D;
+    --fourth-color: #3A3A38;
 }
 
 body {
@@ -18,15 +18,17 @@ body h1 {
 
 header {
     background-color: var(--third-color);
-   
+
 }
 
 header span {
-    font-family: 'Orbitron', sans-serif, system-ui;;
+    font-family: 'Orbitron', sans-serif, system-ui;
+    ;
     color: var(--first-color);
     display: block;
     text-align: center;
-    padding: 10px;;
+    padding: 10px;
+    ;
 }
 
 header nav ul {
@@ -47,6 +49,7 @@ header nav ul li {
 nav a {
     text-decoration: none;
     color: var(--first-color);
+    font-weight: bold;
 }
 
 nav a:hover {
@@ -57,7 +60,8 @@ nav a:hover {
 
 footer {
     background-color: var(--third-color);
-    font-family: 'Orbitron', sans-serif, system-ui;;
+    font-family: 'Orbitron', sans-serif, system-ui;
+    ;
     color: var(--first-color);
     display: block;
     text-align: center;
@@ -97,31 +101,38 @@ footer {
     display: flex;
     justify-content: space-between;
 }
-.location h3{
+
+.location h3 {
     grid-column: span 2;
     text-align: center;
     border-top: #A4C2A5 10px dotted;
 }
+
 .flag {
     margin: 10px;
+    width: 100px;
+    height: auto;
+    display: block;
 }
 
 
 main {
-  max-width: 1050px;       
-  width: 100%;            
-  margin: 0 auto;         
-  padding: 1rem;          
-  box-sizing: border-box; 
+    max-width: 1050px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
+
+.card a {
+    text-decoration: none;
+    color: var(--first-color);
+    font-weight: bold;
+    text-decoration: underline;
+}
 
 .card a:hover {
     color: var(--second-color);
-    text-decoration: underline;
     background-color: var(--third-color);
-}
-.card a {
-    text-decoration: none;
-    color: var(--second-color);
 }
