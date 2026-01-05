@@ -1,0 +1,127 @@
+:root {
+    --first-color: #F1F2EB;
+    --second-color: #A4C2A5;
+    --third-color: #566246;
+    --fourth-color: #4A4A48;
+    --first-font-family: 'Roboto', sans-serif, system-ui;
+    --second-font-family: 'Orbitron', sans-serif, system-ui;
+    --third-font-family: 'Fascinate Inline', cursive, system-ui;
+    --fourth-font-family: 'Rubik Microbe', cursive, system-ui;
+}
+
+body {
+    background: #A4C2A5;
+    margin: 0;
+}
+
+body h1 {
+    display: block;
+    text-align: center;
+}
+
+
+header {
+    background-color: var(--third-color);
+   
+}
+
+header span {
+    font-family: var(--second-font-family);
+    color: var(--first-color);
+    display: block;
+    text-align: center;
+    padding: 10px;;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--fourth-color);
+    padding: 15px;
+
+}
+
+header nav ul li {
+    list-style-type: none;
+    font-family: var(--first-font-family);
+
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--first-color);
+}
+
+nav a:hover {
+    color: var(--second-color);
+    text-decoration: underline;
+    background-color: var(--third-color);
+}
+
+footer {
+    background-color: var(--third-color);
+    font-family: var(--second-font-family);
+    color: var(--first-color);
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.card {
+    border: 2px solid var(--second-color);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+    background-color: var(--fourth-color);
+    color: var(--first-color);
+    font-family: var(--first-font-family);
+}
+
+.card h2 {
+    text-align: center;
+    background-color: var(--third-color);
+    margin: -15px -15px 15px -15px;
+}
+
+.introduce {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    gap: 15px;
+}
+
+.Brazzaville {
+    display: flex;
+    justify-content: space-between;
+}
+.location h3{
+    grid-column: span 2;
+    text-align: center;
+    border-top: #A4C2A5 10px dotted;
+}
+.flag {
+    margin: 10px;
+}
+
+
+main {
+  max-width: 1050px;       
+  width: 100%;            
+  margin: 0 auto;         
+  padding: 1rem;          
+  box-sizing: border-box; 
+}
+
+
+.card a:hover {
+    color: var(--second-color);
+    text-decoration: underline;
+    background-color: var(--third-color);
+}
