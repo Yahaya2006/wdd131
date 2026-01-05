@@ -129,10 +129,9 @@ main {
 
 
 .card a {
-    text-decoration: none;
     color: var(--first-color);
-    font-weight: bold;
     text-decoration: underline;
+    font-weight: 600;
 }
 
 .card a:hover {
