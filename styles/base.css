@@ -1,9 +1,8 @@
 :root {
-  --first-color:  #FFFFFF;  /* texte très clair */
-  --second-color: #74C69D;  /* accent */
-  --third-color:  #2E3A2D;  /* header bg */
-  --fourth-color: #3A3A38;  /* nav/card bg */
-
+  --first-color:  #FFFFFF;  
+  --second-color: #74C69D;  
+  --third-color:  #2E3A2D; 
+  --fourth-color: #3A3A38;  
 }
 
 body {
