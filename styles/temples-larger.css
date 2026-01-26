@@ -1,0 +1,74 @@
+@media screen and (min-width: 700px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+    .header-inner {
+        padding: 1rem 0;
+    }
+
+    .brand {
+        font-size: 1.5rem;
+    }
+    .nav-list {
+        justify-content: flex-end;
+        gap: 1.25rem;
+    }
+
+    #main-content {
+        padding: 2rem 1rem;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    
+    #menu { display: none; }
+  .navigation { flex-direction: row; }
+  .navigation a { display: block; }
+
+
+
+
+
+  .navigation{
+  list-style: none;           /* Supprime puces */
+  margin: 0;
+  padding: 0;
+  display: flex;              /* Flex horizontal */
+  gap: var(--space-2);        /* Espace entre liens */
+  align-items: center;
+  flex-wrap: wrap;            /* Passe à la ligne si trop étroit */
+  justify-content: center;    /* Centre en mobile */
+}
+
+
+.navigation a {
+  color: #fff;
+  text-decoration: none;      /* Pas de soulignement */
+  padding: 0.4rem 0.8rem;     /* Zone cliquable */
+  border-radius: 999px;       /* Pilule */
+  transition: background 0.2s ease, transform 0.1s ease;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+
+.navigation a:hover,
+.navigation a:focus {
+   background: var(--clr-muted);
+  transform: translateY(-1px);
+}
+
+
+.navigation a.active {
+  background: rgba(255,255,255,0.15); /* Différencier l'onglet actif */
+}
+
+   
+}
