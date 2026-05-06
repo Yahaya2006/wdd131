@@ -191,3 +191,7 @@ footer {
 #menu {
   margin-left: auto;
 }
+nav {
+  display: flex;
+  align-items: center;
+}
