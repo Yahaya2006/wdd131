@@ -1,0 +1,84 @@
+@media screen and (min-width: 700px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+    .header-inner {
+        padding: 1rem 0;
+    }
+
+    .brand {
+        font-size: 1.5rem;
+    }
+    .nav-list {
+        justify-content: flex-end;
+        gap: 1.25rem;
+    }
+
+    #main-content {
+        padding: 2rem 1rem;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    
+    #menu { display: none; }
+  .navigation { flex-direction: row; }
+  .navigation a { display: block; }
+
+
+
+
+
+  .navigation{
+  list-style: none;          
+  margin: 0;
+  padding: 0;
+  display: flex;              
+  gap: var(--space-2);        
+  align-items: center;
+  flex-wrap: wrap;            
+  justify-content: center;    
+}
+
+
+.navigation a {
+  color: #fff;
+  text-decoration: none;      
+  padding: 0.4rem 0.8rem;     
+  border-radius: 999px;       
+  transition: background 0.2s ease, transform 0.1s ease;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+
+.navigation a:hover,
+.navigation a:focus {
+   background: var(--clr-muted);
+  transform: translateY(-1px);
+}
+
+
+.navigation a.active {
+  background: rgba(255,255,255,0.15); 
+}
+
+   
+}
+
+footer {
+    background-color: #3b0a57;
+    font-family: 'Orbitron', sans-serif, system-ui;
+    ;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
