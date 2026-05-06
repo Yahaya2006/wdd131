@@ -1,25 +1,26 @@
 :root {
-  --clr-bg: #ffffff;          
-  --clr-text: #1f1f1f;         
-  --clr-muted: #6b7280;       
-  --clr-brand: #3b0a57;        
-  --clr-brand-600: #4c1470;    
+  --clr-bg: #ffffff;
+  --clr-text: #1f1f1f;
+  --clr-muted: #6b7280;
+  --clr-brand: #3b0a57;
+  --clr-brand-600: #4c1470;
 
-  --radius: 10px;              
+  --radius: 10px;
   --shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
-  --space-1: 0.5rem;          
-  --space-2: 1rem;             
-  --space-3: 1.5rem;           
-  --space-4: 2rem;             
- --maxw: 1100px;              
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --maxw: 1100px;
 
   --ff-base: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   --ff-title: "Poppins", var(--ff-base);
 }
 
 
-html, body {
-  margin: 0; 
+html,
+body {
+  margin: 0;
   padding: 0;
   background: var(--clr-bg);
   color: var(--clr-text);
@@ -34,16 +35,16 @@ html, body {
 } */
 
 .site-header {
-  background: var(--clr-brand);  
+  background: var(--clr-brand);
   color: #fff;
 }
 
 
 .header-inner {
   max-width: var(--maxw);
-  margin-inline: auto;    
+  margin-inline: auto;
   padding: var(--space-2);
-  display: flex;          
+  display: flex;
   align-items: center;
   justify-content: space-between;
   gap: var(--space-2);
@@ -53,19 +54,19 @@ html, body {
 .brand {
   font-family: var(--ff-title);
   font-weight: 700;
-  font-size: 1.25rem;  
+  font-size: 1.25rem;
 }
 
 
-.navigation{
-  list-style: none;           
+.navigation {
+  list-style: none;
   margin: 0;
   padding: 0;
-  display: none;  
-  flex-direction: column;            
+  display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
-  gap: var(--space-2);     
-  background-color: var(--clr-brand-600);   
+  gap: var(--space-2);
+  background-color: var(--clr-brand-600);
 }
 
 
@@ -73,21 +74,25 @@ html, body {
 .navigation a {
   display: none;
   color: #fff;
-  text-decoration: none;    
-  padding: 0.4rem 0.8rem;     
-  border-radius: 999px;    
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
   transition: background 0.2s ease, transform 0.1s ease;
   font-weight: 600;
   letter-spacing: 0.2px;
 
-  
+
 }
 
-.navigation.open { display: flex }
+.navigation.open {
+  display: flex;
+  align-items: center;
+
+}
 
 
 .navigation a:hover,
- .navigation a:focus { 
+.navigation a:focus {
   background: var(--clr-muted);
   transform: translateY(-1px);
 }
@@ -95,7 +100,7 @@ html, body {
 
 .navigation a.active::before {
   content: "📍";
-  
+
 }
 
 .open a {
@@ -104,8 +109,8 @@ html, body {
 
 
 #main-content {
-  max-width: var(--maxw);       
-  margin-inline: auto;          
+  max-width: var(--maxw);
+  margin-inline: auto;
   padding: var(--space-3) var(--space-2);
 }
 
@@ -113,15 +118,15 @@ html, body {
 h1 {
   font-family: var(--ff-title);
   font-weight: 700;
-  text-align: center;           
+  text-align: center;
   margin: 0 0 var(--space-3) 0;
 }
 
 
 .gallery {
-  display: grid;                
-  grid-template-columns: 1fr;   
-  gap: var(--space-3);          
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
 }
 
 
@@ -129,15 +134,15 @@ h1 {
   background: #fff;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  overflow: hidden;             
+  overflow: hidden;
   border: 1px solid #eee;
 }
 
 
 .card img {
   width: 100%;
-  aspect-ratio: 16 / 10;        
-  object-fit: cover;           
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
 }
 
 
@@ -159,27 +164,28 @@ h1 {
 }
 
 #menu::before {
-	content: "☰";
+  content: "☰";
 }
 
 #menu.open::before {
-	content: "❎";
+  content: "❎";
 }
 
 
 .navigation a.active {
-  background: rgba(255,255,255,0.15); /* Différencier l'onglet actif */
+  background: rgba(255, 255, 255, 0.15);
+  /* Différencier l'onglet actif */
 }
 
 
 footer {
-    background-color: #3b0a57;
-    font-family: 'Orbitron', sans-serif, system-ui;
-    ;
-    color: var(--first-color);
-    display: block;
-    text-align: center;
-    padding: 10px;
+  background-color: #3b0a57;
+  font-family: 'Orbitron', sans-serif, system-ui;
+  ;
+  color: var(--first-color);
+  display: block;
+  text-align: center;
+  padding: 10px;
 }
 
 #menu {
