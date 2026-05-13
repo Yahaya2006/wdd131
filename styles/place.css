@@ -1,9 +1,9 @@
 :root {
-  --color-primary: #58A4B0;
+  --color-primary: #33606C;
   /* adapte selon ton pays */
   --color-secondary: #DAA49A;
   --color-bg: #A9BCD0;
-  --color-text: #D8DBE2;
+  --color-text: white;
   --font-main: 'Georgia', serif;
 }
 
