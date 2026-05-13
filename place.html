@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>philadelphia</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="wider">
+            <div class="hero">
+                <picture>
+                    <source srcset="images/philadelphia-large.jpg" media="(min-width: 1200px)">
+                    <source srcset="images/philadelphia-medium.jpg" media="(min-width: 768px)">
+                    <img src="images/philadelphia-small.jpg" alt="a picture of philadelphia city" width="400" height="200">
+                </picture>
+
+            </div>
+            <section class="data">
+                <h2>Data</h2>
+                <table>
+                <tr><td>Area</td><td>142.7 sq km</td></tr>
+                <tr><td>Population</td><td>1,573,91</td></tr>
+                <tr><td>State</td><td>Pennsylvania</td></tr>
+                <tr><td>Language</td><td>English</td></tr>
+                <tr><td>Currency</td><td>US Dollar (USD)</td></tr>
+                <tr><td>Time Zone</td><td>UTC-5 (EST)</td></tr>
+                </table> 
+            </section>
+
+            <section class="weather">
+                <h2>Weather</h2>
+                <img class="weather-icon-mobile" src="images/weather.svg" alt="weather icon">
+                <table>
+                    <tr><td>Temperature</td><td>8°F</td></tr>
+                    <tr><td>Conditions</td><td>Partly Cloudy</td></tr>
+                    <tr><td>Wind</td><td>10 mph</td></tr>
+                    <tr>
+                        <td>Wind Chill</td>
+                        <td id="wind-chill"></td>  <!-- rempli par JS -->
+                    </tr>
+                </table>
+            </section>
+        </div>
+
+
+        </main>
+    
+    <footer>
+        <p>© <span id="currentYear"></span>💛 Aminata Yahaya DIABY💛, Republic of Congo</p>
+        <p>Last Modification: <span id="lastModified">0</span></p>
+    </footer>
+</body>
+</html>

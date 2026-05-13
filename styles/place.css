@@ -1,0 +1,109 @@
+:root {
+  --color-primary: #58A4B0;
+  /* adapte selon ton pays */
+  --color-secondary: #DAA49A;
+  --color-bg: #A9BCD0;
+  --color-text: #D8DBE2;
+  --font-main: 'Georgia', serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  text-align: center;
+  padding: 1rem;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+section {
+  padding: 1.5rem;
+  margin: 1rem 1rem;
+  max-width: 600px;
+  background: var(--color-text);
+  border: #DAA49A solid 3px;
+  border-radius: 8px;
+
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+table {
+  width: 100%;
+  text-align: center
+}
+
+td:first-child {
+  font-weight: bold;
+  padding-right: 1rem;
+}
+.weather-icon-mobile {
+  display: block;
+  margin: 0 auto 1rem;
+  width: 60px;
+}
+.weather h2::after {
+  content: '';
+  display: none;
+}
+
+
+footer {
+  background-color: var(--color-primary);
+  font-family: 'Orbitron', sans-serif, system-ui;
+  color: var(--color-text);
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+}
+
+
+
+
+@media screen and (min-width: 1000px) {
+  
+  .weather-icon-mobile{
+    display: none;
+  }
+  .weather h2::after {
+    content: ' ⛅';
+    display: inline;
+  }
+  .wider{
+    position: relative;
+    width: 100%;
+  }
+  .hero{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .data{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(216, 219, 226, 0.8)
+  }
+  .weather{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(216, 219, 226, 0.8)
+
+  }
+}
