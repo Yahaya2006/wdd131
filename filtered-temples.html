@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album With Filter</title>
+    <meta name="description" content="A collection of temple images, old and new, in various sizes, showcasing architectural beauty, history, and cultural significance, curated by Aminata Yahaya">
+    <meta name="author" content="Aminata Yahaya DIABY">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap">
+    
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="brand"> Temple Album</div>
+
+            <button aria-label="menu" id="menu"></button>
+            <nav aria-label="navigation menu">
+                <ul class="navigation">
+                    <li><a href="#" class="active all-temple">Home</a></li>
+                    <li><a href="#" class="old">Old</a></li>
+                    <li><a href="#" class="new">New</a></li>
+                    <li><a href="#" class="larger">Large</a></li>
+                    <li><a href="#"class="smaller">Small</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main-content">
+        <h1>Home</h1>
+        <section class="gallery">
+        </section>
+
+    </main>
+    
+    <footer>
+        <p>© <span id="currentYear"></span> Aminata Yahaya DIABY, Republic of Congo</p>
+        <p id="lastModified">0</p>
+    </footer>
+
+    
+</body>
+</html>

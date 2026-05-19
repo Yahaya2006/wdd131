@@ -1,0 +1,273 @@
+:root {
+  --clr-bg: #ffffff;
+  --clr-text: #1f1f1f;
+  --clr-muted: #6b7280;
+  --clr-brand: #3b0a57;
+  --clr-brand-600: #4c1470;
+
+  --radius: 10px;
+  --shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --maxw: 1100px;
+
+  --ff-base: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  --ff-title: "Poppins", var(--ff-base);
+}
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--clr-bg);
+  color: var(--clr-text);
+  font-family: var(--ff-base);
+  line-height: 1.6;
+}
+
+
+/* img {
+  max-width: 100%; 
+  display: block;  
+} */
+
+.site-header {
+  background: var(--clr-brand);
+  color: #fff;
+}
+
+
+.header-inner {
+  max-width: var(--maxw);
+  margin-inline: auto;
+  padding: var(--space-2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+
+.brand {
+  font-family: var(--ff-title);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+
+.navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: var(--space-2);
+  background-color: var(--clr-brand-600);
+}
+
+
+
+.navigation a {
+  display: none;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  transition: background 0.2s ease, transform 0.1s ease;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+
+
+}
+
+.navigation.open {
+  display: flex;
+  align-items: center;
+
+}
+
+
+.navigation a:hover,
+.navigation a:focus {
+  background: var(--clr-muted);
+  transform: translateY(-1px);
+}
+
+
+.navigation a.active::before {
+  content: "📍";
+
+}
+
+.open a {
+  display: block;
+}
+
+
+#main-content {
+  max-width: var(--maxw);
+  margin-inline: auto;
+  padding: var(--space-3) var(--space-2);
+}
+
+
+h1 {
+  font-family: var(--ff-title);
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 var(--space-3) 0;
+}
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+}
+
+
+.card {
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  border: 1px solid #eee;
+}
+
+
+.card img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+
+.card figcaption {
+  text-align: center;
+  color: var(--clr-muted);
+  padding: var(--space-1) var(--space-2);
+  font-size: 0.95rem;
+}
+
+
+.site-footer {
+  max-width: var(--maxw);
+  margin: var(--space-4) auto var(--space-3);
+  padding: 0 var(--space-2);
+  color: var(--clr-muted);
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "❎";
+}
+
+
+.navigation a.active {
+  background: rgba(255, 255, 255, 0.15);
+  /* Différencier l'onglet actif */
+}
+
+
+footer {
+  background-color: #3b0a57;
+  font-family: 'Orbitron', sans-serif, system-ui;
+  ;
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+
+#menu {
+  margin-left: auto;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 700px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+    .header-inner {
+        padding: 1rem 0;
+    }
+
+    .brand {
+        font-size: 1.5rem;
+    }
+    .nav-list {
+        justify-content: flex-end;
+        gap: 1.25rem;
+    }
+
+    #main-content {
+        padding: 2rem 1rem;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    
+    #menu { display: none; }
+  .navigation { flex-direction: row; }
+  .navigation a { display: block; }
+
+
+
+
+
+  .navigation{
+  list-style: none;          
+  margin: 0;
+  padding: 0;
+  display: flex;  
+  flex-direction: row;            
+  gap: var(--space-2);        
+  align-items: center;
+  flex-wrap: wrap;            
+  justify-content: center;    
+}
+
+
+.navigation a {
+  color: #fff;
+  text-decoration: none;      
+  padding: 0.4rem 0.8rem;     
+  border-radius: 999px;       
+  transition: background 0.2s ease, transform 0.1s ease;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+
+.navigation a:hover,
+.navigation a:focus {
+   background: var(--clr-muted);
+  transform: translateY(-1px);
+}
+
+
+.navigation a.active {
+  background: rgba(255,255,255,0.15); 
+}
+
+   
+}
