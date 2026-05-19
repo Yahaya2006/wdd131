@@ -29,16 +29,18 @@ body {
 }
 
 
-/* img {
+ img {
   max-width: 100%; 
   display: block;  
-} */
+}
 
 .site-header {
   background: var(--clr-brand);
   color: #fff;
 }
-
+header{
+  font-family: 'Orbitron', sans-serif, system-ui;;
+}
 
 .header-inner {
   max-width: var(--maxw);
@@ -52,7 +54,7 @@ body {
 
 
 .brand {
-  font-family: var(--ff-title);
+  font-family: 'Orbitron', sans-serif, system-ui;;
   font-weight: 700;
   font-size: 1.25rem;
 }
@@ -93,7 +95,8 @@ body {
 
 .navigation a:hover,
 .navigation a:focus {
-  background: var(--clr-muted);
+  background: #dbcee3 ;
+  color: #4c1470;
   transform: translateY(-1px);
 }
 
@@ -132,10 +135,18 @@ h1 {
 
 .card {
   background: #fff;
+  background-color:#dbcee3 ;
+  text-align: center;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   overflow: hidden;
   border: 1px solid #eee;
+  padding: 0 var(--space-2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -143,14 +154,7 @@ h1 {
   width: 100%;
   aspect-ratio: 16 / 10;
   object-fit: cover;
-}
-
-
-.card figcaption {
-  text-align: center;
-  color: var(--clr-muted);
-  padding: var(--space-1) var(--space-2);
-  font-size: 0.95rem;
+  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -181,7 +185,6 @@ h1 {
 footer {
   background-color: #3b0a57;
   font-family: 'Orbitron', sans-serif, system-ui;
-  ;
   color: white;
   display: block;
   text-align: center;
@@ -190,6 +193,12 @@ footer {
 
 #menu {
   margin-left: auto;
+  display: block;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 nav {
   display: flex;
@@ -210,11 +219,7 @@ nav {
     .brand {
         font-size: 1.5rem;
     }
-    .nav-list {
-        justify-content: flex-end;
-        gap: 1.25rem;
-    }
-
+    
     #main-content {
         padding: 2rem 1rem;
     }
@@ -260,7 +265,8 @@ nav {
 
 .navigation a:hover,
 .navigation a:focus {
-   background: var(--clr-muted);
+   background: #dbcee3 ;
+   color:#4c1470;
   transform: translateY(-1px);
 }
 

@@ -109,7 +109,7 @@ function displayTemples(array) {
   <p>Location: ${temple.location} </p>
   <p>Dedicated: ${temple.dedicated} </p>
   <p>Size: ${temple.area} sq ft</p>
-  <img src="${temple.imageUrl}" loading="lazy" alt="${temple.templeName}" width="300" height="500">
+  <img src="${temple.imageUrl}" loading="lazy" alt="${temple.templeName}" >
   `;
   
   gallerySection.appendChild(div)
