@@ -14,6 +14,7 @@ header {
     color: var(--fourth-color);
     padding: 1rem;
     text-align: center;
+    font-size: large;
 }
 footer {
     background-color: var(--second-color);
@@ -74,10 +75,14 @@ input[type="submit"] {
     font-weight: bold;
     margin-top: 10px;
 }
-input [type="text"] {
+input[type="submit"]:hover {
+    background-color: var(--third-color);
+}
+input[type="text"] {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    padding: 8px;
     border: 1px solid var(--second-color);
     border-radius: 5px;
-    padding: 10px;
-    width: 100%;
-    
 }

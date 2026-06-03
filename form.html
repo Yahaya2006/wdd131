@@ -1,34 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <meta name="description" content="This is a description of the document.">
+    <title>Product Review</title>
+    <meta name="description"
+        content="Submit your review for our product. We value your feedback and strive to improve our offerings based on your input.">
     <meta name="author" content="Aminata Yahaya DIABY">
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
 </head>
+
 <body>
     <header>
-        Product Review
+        <h1>Product Review</h1>
     </header>
     <main>
         <div class="container">
             <form method="get" action="review.html">
-                <label for="productName" >Product Name:
-                    <select id="productName" name="productName">
-                        <option value="">--Please choose a product--</option>
+                <label for="productName">Product Name:
+                    <select id="productName" name="productName" required>
+                        <option value="" disabled selected>Select a Product...</option>
                     </select>
                 </label>
 
                 <fieldset>
                     <legend>Overall Rating</legend>
                     <label for="rating1"><input type="radio" id="rating1" name="rating" value="1" required>⭐</label>
-                    <label for="rating2"><input type="radio" id="rating2" name="rating" value="2">⭐⭐</label>
-                    <label for="rating3"><input type="radio" id="rating3" name="rating" value="3">⭐⭐⭐</label>
-                    <label for="rating4"><input type="radio" id="rating4" name="rating" value="4">⭐⭐⭐⭐</label>
-                    <label for="rating5"><input type="radio" id="rating5" name  ="rating" value="5">⭐⭐⭐⭐⭐</label>
+                    <label for="rating2"><input type="radio" id="rating2" name="rating" value="2" required>⭐⭐</label>
+                    <label for="rating3"><input type="radio" id="rating3" name="rating" value="3" required>⭐⭐⭐</label>
+                    <label for="rating4"><input type="radio" id="rating4" name="rating" value="4" required>⭐⭐⭐⭐</label>
+                    <label for="rating5"><input type="radio" id="rating5" name="rating" value="5" required>⭐⭐⭐⭐⭐</label>
                 </fieldset>
 
                 <label for="installDate">Date of Installation:</label>
@@ -36,11 +39,16 @@
 
                 <fieldset>
                     <legend>Useful Features</legend>
-                    <label><input type="checkbox" id="feature1" name="feature1" value="Easy to Install">Easy to Install</label>
-                    <label><input type="checkbox" id="feature2" name="feature2" value="User-Friendly Interface">User-Friendly Interface</label>
-                    <label><input type="checkbox" id="feature3" name="feature3" value="Good Customer Support">Good Customer Support</label>
-                    <label><input type="checkbox" id="feature4" name="feature4" value="Affordable Price">Affordable Price</label>
-                    <label><input type="checkbox" id="feature5" name="feature5" value="Regular Updates">Regular Updates</label>
+                    <label for="feature1"><input type="checkbox" id="feature1" name="feature1" value="Easy to Install">
+                        Easy to Install</label>
+                    <label for="feature2"><input type="checkbox" id="feature2" name="feature2"
+                            value="User-Friendly Interface"> User-Friendly Interface</label>
+                    <label for="feature3"><input type="checkbox" id="feature3" name="feature3"
+                            value="Good Customer Support"> Good Customer Support</label>
+                    <label for="feature4"><input type="checkbox" id="feature4" name="feature4" value="Affordable Price">
+                        Affordable Price</label>
+                    <label for="feature5"><input type="checkbox" id="feature5" name="feature5" value="Regular Updates">
+                        Regular Updates</label>
                 </fieldset>
 
                 <label for="review">Written Review:
@@ -55,12 +63,13 @@
 
 
             </form>
-    
+
         </div>
     </main>
-    <footer> 
+    <footer>
         <p>© <span id="currentYear"></span> Aminata Yahaya DIABY, Republic of Congo</p>
         <p id="lastModified">0</p>
     </footer>
 </body>
+
 </html>
