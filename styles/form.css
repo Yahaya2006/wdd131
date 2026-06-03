@@ -5,8 +5,9 @@
     --fourth-color: #FDF0D5;
     --fifth-color: #C6D8D3;
 }
+
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 header {
@@ -16,24 +17,27 @@ header {
     text-align: center;
     font-size: large;
 }
+
 footer {
     background-color: var(--second-color);
-    font-family: 'Orbitron', sans-serif, system-ui;;
+    font-family: 'Orbitron', sans-serif, system-ui;
     color: var(--first-color);
     display: block;
     text-align: center;
     padding: 10px;
 }
+
 body {
     font-family: 'Roboto', sans-serif, system-ui;
     background-color: var(--fourth-color);
 }
+
 .container {
     background-color: var(--fifth-color);
     padding: 1rem;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    margin: 20px auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px auto;
     max-width: 600px;
 }
 
@@ -57,27 +61,30 @@ fieldset {
 
 textarea {
     min-height: 100px;
-    padding: 50px;
+    padding: 1rem;
     width: 100%;
     border: 1px solid var(--second-color);
     border-radius: 5px;
     display: block;
 }
+
 input[type="submit"] {
     background-color: var(--second-color);
     color: var(--fourth-color);
     border: none;
     padding: 10px;
-    width: 33.33%;
-    align-self: center;
+    width: 100%;
+    align-self: stretch;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
     margin-top: 10px;
 }
+
 input[type="submit"]:hover {
     background-color: var(--third-color);
 }
+
 input[type="text"] {
     display: block;
     width: 100%;
@@ -85,4 +92,23 @@ input[type="text"] {
     padding: 8px;
     border: 1px solid var(--second-color);
     border-radius: 5px;
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        max-width: 900px;
+        padding: 2rem;
+    }
+
+    form {
+        gap: 1.25rem;
+    }
+
+    fieldset {
+        margin: 20px 0;
+    }
+
+    input[type="submit"] {
+        width: 25%;
+    }
 }
