@@ -1,7 +1,9 @@
 const currentYear = new Date().getFullYear();
-document.getElementById('currentYear').innerHTML = currentYear;
+const currentYearEl = document.getElementById('currentYear');
+if (currentYearEl) currentYearEl.textContent = currentYear;
 
-document.getElementById('lastModified').innerHTML = document.lastModified
+const lastModifiedEl = document.getElementById('lastModified');
+if (lastModifiedEl) lastModifiedEl.textContent = document.lastModified;
 
 const products = [
   {
@@ -31,15 +33,18 @@ const products = [
   }
 ];
 const select = document.querySelector('#productName');
-products.forEach(product => {
+if (select) {
+  products.forEach(product => {
     let option = document.createElement('option');
     option.value = product.id;
     option.textContent = product.name;
     select.appendChild(option);
-})
+  });
+}
 
 let reviewCount = Number(localStorage.getItem('reviewCount')) || 0;
 reviewCount++;
 localStorage.setItem('reviewCount', reviewCount);
-document.getElementById('counter').textContent = `Total reviews submitted: ${reviewCount}`;
+const counterEl = document.getElementById('counter');
+if (counterEl) counterEl.textContent = `Total reviews submitted: ${reviewCount}`;
 
