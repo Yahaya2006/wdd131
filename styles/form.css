@@ -12,7 +12,7 @@
 
 header {
     background-color: var(--second-color);
-    color: var(--fourth-color);
+    color: #ffffff;
     padding: 1rem;
     text-align: center;
     font-size: large;
@@ -21,7 +21,7 @@ header {
 footer {
     background-color: var(--second-color);
     font-family: 'Orbitron', sans-serif, system-ui;
-    color: var(--fourth-color);
+    color: #ffffff;
     display: block;
     text-align: center;
     padding: 10px;
