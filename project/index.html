@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlamVoices – Slam Poetry Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/slamvoices.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="logo">
+                <img src="images/logo.png" alt="SlamVoices Logo" width="60" height="60">
+                <span class="site-title">SlamVoices</span>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="rules.html">Rules & Poets</a></li>
+                    <li><a href="contact.html">Join Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Where Words Become Weapons of Truth</h1>
+            <p>Discover the raw, powerful world of slam poetry —
+                where every voice matters and every word counts.</p>
+        </div>
+    </section>
+
+    <section class="content-section" id="about">
+        <div class="container">
+            <h2>What is Slam Poetry?</h2>
+            <p>
+                Slam poetry is a competitive art form in which poets perform
+                their own original work and are judged by members of the audience.
+                Unlike traditional poetry readings, slam is loud, passionate,
+                and deeply personal. It is poetry with a pulse.
+            </p>
+            <p>
+                Performers use voice, movement, and emotion to bring their words
+                to life. There are no props, no costumes — just the poet and their
+                truth. The crowd becomes part of the performance, responding with
+                snaps, cheers, and applause.
+            </p>
+        </div>
+    </section>
+
+    <section class="content-section alt" id="history">
+        <div class="container">
+            <h2>A Brief History</h2>
+            <p>
+                Slam poetry was born in Chicago in 1984, when construction
+                worker and poet <strong>Marc Kelly Smith</strong> organized
+                competitive poetry readings at the Green Mill Jazz Club.
+                Frustrated with the elitism of traditional poetry, he wanted
+                to bring poetry back to the people.
+            </p>
+            <p>
+                The movement quickly spread across the United States and then
+                the world. Today, slam competitions are held in clubs, schools,
+                theaters, and stadiums on every continent. The annual
+                <em>National Poetry Slam</em> draws hundreds of teams from
+                across North America.
+            </p>
+        </div>
+    </section>
+
+    <section class="content-section" id="poem-week">
+        <div class="container">
+            <h2>Poem of the Week</h2>
+            <div class="poem-card" id="poemCard">
+                <h3 id="poemTitle"></h3>
+                <p id="poemAuthor"></p>
+                <blockquote id="poemExcerpt"></blockquote>
+            </div>
+            <button class="btn-secondary" id="newPoemBtn">Read Another Poem ↻</button>
+        </div>
+    </section>
+
+    <section class="content-section alt" id="poets">
+        <div class="container">
+            <h2>Notable Slam Poets</h2>
+            <div class="poets-grid" id="poetsGrid"></div>
+            <a href="rules.html" class="btn-primary">Discover More Poets</a>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Find Your Voice?</h2>
+            <p>Join our slam poetry club and be part of a community
+                that celebrates authentic expression.</p>
+            <a href="contact.html" class="btn-primary">Join the Club</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-inner">
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="rules.html">Rules & Poets</a>
+                <a href="contact.html">Join Us</a>
+                <a href="references.html">References</a>
+            </nav>
+            <p>&copy; 2026 SlamVoices. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

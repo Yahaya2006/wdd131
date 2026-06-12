@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlamVoices – Rules & Poets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/slamvoices.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-inner">
+            <div class="logo">
+                <img src="images/logo.png" alt="SlamVoices Logo" width="60" height="60">
+                <span class="site-title">SlamVoices</span>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rules.html" class="active">Rules & Poets</a></li>
+                    <li><a href="contact.html">Join Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="hero-content">
+            <h1>Rules & Famous Poets</h1>
+            <p>Everything you need to know about slam competitions
+                and the voices that shaped this art form.</p>
+        </div>
+    </section>
+
+    <section class="content-section" id="rules">
+        <div class="container">
+            <h2>How a Slam Competition Works</h2>
+            <p>
+                A poetry slam is a competitive event in which poets
+                perform their original work and are scored by judges
+                selected from the audience. Here are the fundamental rules:
+            </p>
+
+            <div class="rules-grid" id="rulesGrid"></div>
+        </div>
+    </section>
+
+    <section class="content-section alt" id="scoring">
+        <div class="container">
+            <h2>The Scoring System</h2>
+            <p>
+                Slam poetry uses a scoring system inspired by Olympic
+                gymnastics. Five judges are selected randomly from the
+                audience at the beginning of the event.
+            </p>
+            <div class="scoring-steps">
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <div>
+                        <h3>Five Judges</h3>
+                        <p>Five audience members are selected as judges
+                            at random before the competition begins.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <div>
+                        <h3>Score from 0 to 10</h3>
+                        <p>Each judge gives a score between 0 and 10,
+                            including decimals. 10 is a perfect score.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <div>
+                        <h3>Drop High and Low</h3>
+                        <p>The highest and lowest scores are dropped
+                            to reduce bias. The three remaining scores are added.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <span class="step-number">4</span>
+                    <div>
+                        <h3>Maximum Score: 30</h3>
+                        <p>The maximum possible score for a single poem
+                            is 30 points (3 × 10).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section" id="poets">
+        <div class="container">
+            <h2>Famous Slam Poets</h2>
+            <p>
+                These poets have shaped the world of slam poetry
+                through their powerful performances and lasting impact.
+            </p>
+            <div class="full-poets-grid" id="fullPoetsGrid"></div>
+        </div>
+    </section>
+
+    <section class="content-section alt" id="filter-section">
+        <div class="container">
+            <h2>Filter Poets by Origin</h2>
+            <div class="filter-bar" id="filterBar"></div>
+            <div class="full-poets-grid" id="filteredPoetsGrid"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-inner">
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="rules.html">Rules & Poets</a>
+                <a href="contact.html">Join Us</a>
+                <a href="references.html">References</a>
+            </nav>
+            <p>&copy; 2026 SlamVoices. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/rules.js"></script>
+</body>
+
+</html>

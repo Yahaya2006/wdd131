@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --color-bg: #A0DBF0;
+    --color-primary: #7B2FBE;
+    --color-accent: #4361EE;
+    --color-text: #E8E8F0;
+    --color-section: #1E1040;
+    --font-heading: 'Permanent Marker', cursive;
+    --font-body: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-bg);
+    color: var(--color-section);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--color-primary);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.site-title {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--color-text);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: var(--color-bg);
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--color-text);
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.hero {
+    background-color: var(--color-section);
+    color: var(--color-text);
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--color-accent);
+    color: var(--color-text);
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary);
+}
+
+.btn-secondary {
+    display: inline-block;
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    padding: 0.6rem 1.5rem;
+    border-radius: 30px;
+    font-family: var(--font-body);
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+}
+
+.content-section {
+    padding: 3rem 2rem;
+    border-radius: 8px;
+}
+
+.content-section.alt {
+    background-color: var(--color-section);
+    color: var(--color-text);
+}
+
+.content-section.alt h2 {
+    color: var(--color-bg);
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    /* border-radius: 50%; */
+}
+
+h2 {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-family: var(--font-heading);
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.poem-card {
+    background-color: var(--color-section);
+    color: var(--color-text);
+    border-left: 5px solid var(--color-primary);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.poem-card h3 {
+    font-size: 1.3rem;
+    color: var(--color-bg);
+    margin-bottom: 0.3rem;
+}
+
+.poem-card p {
+    color: var(--color-accent);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.poem-card blockquote {
+    font-style: italic;
+    line-height: 1.8;
+}
+
+.poets-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.poet-card {
+    background-color: var(--color-bg);
+    border-radius: 8px;
+    padding: 1.2rem;
+    text-align: center;
+}
+
+.poet-card h3 {
+    font-size: 1.1rem;
+    color: var(--color-primary);
+    margin-bottom: 0.3rem;
+}
+
+.poet-card p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.cta-section {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.cta-section h2 {
+    color: var(--color-text);
+}
+
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.footer-nav a {
+    color: var(--color-bg);
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    color: var(--color-accent);
+}
+
+footer p {
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+.page-hero {
+    background-color: var(--color-section);
+    color: var(--color-text);
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.page-hero h1 {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.rules-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.rule-card {
+    background-color: var(--color-section);
+    color: var(--color-text);
+    padding: 1.2rem;
+    border-radius: 8px;
+    border-top: 4px solid var(--color-primary);
+}
+
+.rule-card h3 {
+    font-size: 1.1rem;
+    color: var(--color-bg);
+    margin-bottom: 0.4rem;
+}
+
+.rule-card p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.scoring-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.step-number {
+    color: var(--color-text);
+    font-family: var(--font-heading);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.step h3 {
+    color: var(--color-bg);
+    margin-bottom: 0.3rem;
+}
+
+.step p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.full-poets-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.poet-card-full {
+    background-color: var(--color-section);
+    color: var(--color-text);
+    padding: 1.2rem;
+    border-radius: 8px;
+    border-left: 5px solid var(--color-accent);
+}
+
+.poet-card-full h3 {
+    font-size: 1.1rem;
+    color: var(--color-bg);
+    margin-bottom: 0.4rem;
+}
+
+.poet-badge {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    margin-bottom: 0.5rem;
+}
+
+.poet-card-full p {
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+}
+
+.poet-card-full small {
+    color: var(--color-accent);
+    font-size: 0.8rem;
+}
+
+.filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-bottom: 1.2rem;
+}
+
+.filter-btn {
+    background-color: transparent;
+    border: 2px solid var(--color-bg);
+    color: var(--color-bg);
+    padding: 0.4rem 1.2rem;
+    border-radius: 20px;
+    font-family: var(--font-body);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: var(--color-bg);
+    color: var(--color-section);
+}
+
+.no-result {
+    color: var(--color-bg);
+    font-style: italic;
+}
+
+fieldset {
+    border: 2px solid var(--color-primary);
+    border-radius: 8px;
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+legend {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    padding: 0 0.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    font-weight: 700;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 0.7rem;
+    border: 2px solid var(--color-primary);
+    border-radius: 6px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    background-color: var(--color-bg);
+    color: var(--color-section);
+}
+
+.required {
+    color: var(--color-primary);
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 400;
+}
+
+.success-message {
+    display: none;
+    background-color: var(--color-section);
+    color: var(--color-text);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    border-top: 5px solid var(--color-primary);
+}
+
+.success-message h3 {
+    color: var(--color-bg);
+    margin-bottom: 1rem;
+}
+
+.submission-card {
+    background-color: var(--color-section);
+    color: var(--color-text);
+    padding: 1.2rem;
+    border-radius: 8px;
+    border-left: 5px solid var(--color-accent);
+}
+
+.submission-card p {
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+}
+
+.submission-card small {
+    color: var(--color-accent);
+}
+
+/* ---------- mobile screens ---------- */
+@media (max-width: 700px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+    }
+
+    nav.open {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+
+    .header-inner {
+        flex-wrap: wrap;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .poets-grid,
+    .rules-grid,
+    .full-poets-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .step {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
